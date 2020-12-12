@@ -9,6 +9,11 @@ $dark: #111;
 $darkgray: #555;
 $gray: #f3f3f7;
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-size: 16px;
@@ -23,6 +28,10 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .nav {
   padding: 15px;
   background: $black;
@@ -33,5 +42,29 @@ h1 {
 }
 
 .home {
+  .slogan {
+    text-align: center;
+  }
+
+  .main {
+    background: #f3f3f7;
+    padding: 15px;
+  }
+}
+
+.card {
+  margin: 10px;
   padding: 15px;
+  border-radius: 8px;
+  transition: all .2s ease;
+  background: $white;
+  box-shadow: 1px 4px 4px -1px rgba(0,0,0,.15);
+
+  button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+  }
 }
