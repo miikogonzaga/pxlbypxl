@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.scss';
+import '../index.scss';
+import Nav from './Nav'
 
 function App() {
   return (
     <div className="App">
-      <h1>PxlbyPxl</h1>
+      <Nav />
     </div>
   );
 }
