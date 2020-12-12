@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+
 $black: #000;
 $white: #FFF;
 $darkblue: #8DC8EA;
@@ -23,7 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+h1, h2, h3 {
   color: $dark;
   font-family: 'Quicksand', sans-serif;
 }
@@ -53,18 +54,50 @@ img {
 }
 
 .card {
+  position: relative;
   margin: 10px;
   padding: 15px;
   border-radius: 8px;
   transition: all .2s ease;
   background: $white;
   box-shadow: 1px 4px 4px -1px rgba(0,0,0,.15);
+  color: $dark;
 
-  button {
-    padding: 10px;
+  span {
+    position: absolute;
+    right: 0;
+    padding: 6px 10px 8px 16px;
+    background: $darkblue;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  img {
+    padding: 30px;
+  }
+
+  h2 {
+    margin: 3px 0 15px;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding: 15px;
     margin: 10px 0;
     width: 100%;
+    display: block;
+    background: $gray;
     border-radius: 30px;
     border: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: $dark;
   }
 }
