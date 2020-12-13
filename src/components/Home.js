@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Card from './Card';
+import Footer from './Footer'
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props)
-  }
-  
-  render() {
-    return (
-      <div className="home">
+export default function Home() {
+  return (
+    <div className="home">
+      <section className="slogan">
+        <h3>Free Wallpaper Backgrounds!</h3>
+      </section>
 
-        <section className="slogan">
-          <h3>Free Wallpaper Backgrounds!</h3>
-        </section>
-
+      <section className="main">
         <Card />
-      </div>
-    )
-  }
+      </section>
+
+      <section className="footer">
+        <Footer />
+      </section>
+    </div>
+  )
 }

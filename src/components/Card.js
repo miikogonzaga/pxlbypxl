@@ -17,22 +17,32 @@ export default class Card extends Component {
   }
 
   handleChange = (val) => {
-    if (val.target.value === 'All') {
-      this.setState({
-        characters: Data
-      })
-    }
-
-    if (val.target.value === 'DragonBall Z') {
-      this.setState({
-        characters: Data.filter(i => i.topic === 'Dragonball Z')
-      })
-    }
-
-    if (val.target.value === 'Dragonball') {
-      this.setState({
-        characters: Data.filter(i => i.topic === 'Dragonball')
-      })
+    switch (val.target.value) {
+      case 'All':
+        this.setState({
+          characters: Data
+        })
+        break
+      case 'DragonBall Z':
+        this.setState({
+          characters: Data.filter(i => i.topic === 'Dragonball Z')
+        })
+        break
+      case 'Dragonball':
+        this.setState({
+          characters: Data.filter(i => i.topic === 'Dragonball')
+        })
+        break
+      case 'Star Wars':
+        this.setState({
+          characters: Data.filter(i => i.topic === 'Star Wars')
+        })
+        break
+      default:
+        this.setState({
+          characters: Data
+        })
+        break
     }
   }
 
@@ -64,17 +74,28 @@ export default class Card extends Component {
 
   render() {
     return (
-      <div>
-        <select onChange={(val) => this.handleChange(val)}>
-          <option>All</option>
-          <option>DragonBall Z</option>
-          <option>Dragonball</option>
-          <option>Star Wars</option>
-        </select>
+      <>
+        <div className="dropdown">
+          <div>
+            <select onChange={(val) => this.handleChange(val)}>
+              <option>All</option>
+              <option>DragonBall Z</option>
+              <option>Dragonball</option>
+              <option>Star Wars</option>
+            </select>
+          </div>
 
-        {this.renderCharacters()}
-      </div>
+          <div className="results">
+            {this.state.characters.length === 1 ?
+              <p>(1) result</p> :
+              <p>({this.state.characters.length}) results</p> }
+          </div>
+        </div>
 
+        <section className="characters">
+          {this.renderCharacters()}
+        </section>
+      </>
     )
   }
 }

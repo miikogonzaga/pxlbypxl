@@ -16,6 +16,22 @@ const Characters = [
     },
     topic: 'Dragonball',
     name: 'Gohan Dragonball'
+  },
+  {
+    img: {
+      url: Gohan,
+      alt: ''
+    },
+    topic: 'Star Wars',
+    name: 'Kylo Ren'
+  },
+  {
+    img: {
+      url: Gohan,
+      alt: ''
+    },
+    topic: 'Star Wars',
+    name: 'Boba Fett'
   }
 ]
 
