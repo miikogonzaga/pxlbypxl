@@ -9,6 +9,7 @@ $blue: #B8DDF2;
 $dark: #111;
 $darkgray: #555;
 $gray: #f3f3f7;
+$red: #db0000;
 
 * { box-sizing: border-box; }
 
@@ -55,7 +56,7 @@ img {
       justify-content: space-between;
 
       .results {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         color: $dark;
       }
@@ -63,10 +64,17 @@ img {
 
     select {
       padding: 12px;
+      width: 180px;
       font-size: 16px;
       border-radius: 8px;
       border: 1px solid #111;
       transition: all .2s ease-in-out;
+      appearance: none;
+      background-image: url(images/down.png);
+      background-color: #fff;
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: right .75em center;
     }
 
     select:focus {
@@ -74,6 +82,7 @@ img {
       box-shadow: 0.25rem 0.25rem #111;
       font-weight: 600;
       outline: 0;
+      background-size: 15px;
     }
 
     .characters {
@@ -110,9 +119,16 @@ img {
     padding: 30px;
   }
 
-  h2 {
-    margin: 3px 0 15px;
-    text-transform: uppercase;
+  .details {
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
   }
 
   a {

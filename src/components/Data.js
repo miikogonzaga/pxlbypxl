@@ -2,36 +2,36 @@ import Gohan from '../images/Gohan.png'
 
 const Characters = [
   {
-    img: {
-      url: Gohan,
-      alt: ''
-    },
     topic: 'Dragonball Z',
-    name: 'Gohan'
-  },
-  {
+    name: 'Gohan',
     img: {
       url: Gohan,
-      alt: ''
-    },
-    topic: 'Dragonball',
-    name: 'Gohan Dragonball'
+      alt: '1'
+    }
   },
   {
+    topic: 'Dragonball Z',
+    name: 'Goku',
     img: {
       url: Gohan,
-      alt: ''
-    },
+      alt: '2'
+    }
+  },
+  {
     topic: 'Star Wars',
-    name: 'Kylo Ren'
-  },
-  {
+    name: 'Kylo Ren',
     img: {
       url: Gohan,
-      alt: ''
-    },
+      alt: '3'
+    }
+  },
+  {
     topic: 'Star Wars',
-    name: 'Boba Fett'
+    name: 'Boba Fett',
+    img: {
+      url: Gohan,
+      alt: '4'
+    }
   }
 ]
 

@@ -28,11 +28,6 @@ export default class Card extends Component {
           characters: Data.filter(i => i.topic === 'Dragonball Z')
         })
         break
-      case 'Dragonball':
-        this.setState({
-          characters: Data.filter(i => i.topic === 'Dragonball')
-        })
-        break
       case 'Star Wars':
         this.setState({
           characters: Data.filter(i => i.topic === 'Star Wars')
@@ -53,13 +48,13 @@ export default class Card extends Component {
           topic,
           name
         }) => (
-          <div className="card" key={name}>
+          <div className="card" key={img.alt}>
             <span>Free</span>
 
             <img src={img.url} alt={img.alt} />
 
             <div className="details">
-              <small>{topic}</small>
+              <p>{topic}</p>
               <h2>{name}</h2>
             </div>
 
@@ -80,7 +75,6 @@ export default class Card extends Component {
             <select onChange={(val) => this.handleChange(val)}>
               <option>All</option>
               <option>DragonBall Z</option>
-              <option>Dragonball</option>
               <option>Star Wars</option>
             </select>
           </div>
