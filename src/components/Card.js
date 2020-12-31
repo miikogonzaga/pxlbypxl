@@ -23,14 +23,14 @@ export default class Card extends Component {
           characters: Data
         })
         break
-      case 'DragonBall Z':
+      case 'Pokémon':
         this.setState({
-          characters: Data.filter(i => i.topic === 'Dragonball Z')
+          characters: Data.filter(i => i.topic === 'Pokémon')
         })
         break
-      case 'Star Wars':
+      case 'Dragonball Z':
         this.setState({
-          characters: Data.filter(i => i.topic === 'Star Wars')
+          characters: Data.filter(i => i.topic === 'Dragonball Z')
         })
         break
       default:
@@ -51,14 +51,17 @@ export default class Card extends Component {
           <div className="card" key={img.alt}>
             <span>Free</span>
 
-            <img src={img.url} alt={img.alt} />
+            <img
+              src={img.url}
+              alt={img.alt}
+              style={{ maxWidth: 500 }}/>
 
             <div className="details">
               <p>{topic}</p>
               <h2>{name}</h2>
             </div>
 
-            <a href={img.url} download={img.url}>
+            <a href={img.wallpaper} download={img.wallpaper}>
               Save {name}
             </a>
           </div>
@@ -74,8 +77,8 @@ export default class Card extends Component {
           <div>
             <select onChange={(val) => this.handleChange(val)}>
               <option>All</option>
-              <option>DragonBall Z</option>
-              <option>Star Wars</option>
+              <option>Pokémon</option>
+              <option>Dragonball Z</option>
             </select>
           </div>
 
