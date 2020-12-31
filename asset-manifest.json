@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pxlbypxl/static/css/main.6f46276d.chunk.css",
+    "main.js": "/pxlbypxl/static/js/main.d6d4390e.chunk.js",
+    "main.js.map": "/pxlbypxl/static/js/main.d6d4390e.chunk.js.map",
+    "runtime-main.js": "/pxlbypxl/static/js/runtime-main.08dccac3.js",
+    "runtime-main.js.map": "/pxlbypxl/static/js/runtime-main.08dccac3.js.map",
+    "static/js/2.d1d651cf.chunk.js": "/pxlbypxl/static/js/2.d1d651cf.chunk.js",
+    "static/js/2.d1d651cf.chunk.js.map": "/pxlbypxl/static/js/2.d1d651cf.chunk.js.map",
+    "index.html": "/pxlbypxl/index.html",
+    "precache-manifest.232a29fa12d41c9708897baad897821d.js": "/pxlbypxl/precache-manifest.232a29fa12d41c9708897baad897821d.js",
+    "service-worker.js": "/pxlbypxl/service-worker.js",
+    "static/css/main.6f46276d.chunk.css.map": "/pxlbypxl/static/css/main.6f46276d.chunk.css.map",
+    "static/js/2.d1d651cf.chunk.js.LICENSE": "/pxlbypxl/static/js/2.d1d651cf.chunk.js.LICENSE",
+    "static/media/Gohan.png": "/pxlbypxl/static/media/Gohan.096172bb.png",
+    "static/media/pichu-wallpaper.png": "/pxlbypxl/static/media/pichu-wallpaper.6ba90703.png",
+    "static/media/pichu.png": "/pxlbypxl/static/media/pichu.98845e45.png",
+    "static/media/squirtle-wp.png": "/pxlbypxl/static/media/squirtle-wp.70f9f8b9.png",
+    "static/media/squirtle.png": "/pxlbypxl/static/media/squirtle.0fa7496b.png",
+    "static/media/vulpix-wp.png": "/pxlbypxl/static/media/vulpix-wp.c87400e5.png",
+    "static/media/vulpix.png": "/pxlbypxl/static/media/vulpix.78e05d0f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08dccac3.js",
+    "static/js/2.d1d651cf.chunk.js",
+    "static/css/main.6f46276d.chunk.css",
+    "static/js/main.d6d4390e.chunk.js"
+  ]
+}
